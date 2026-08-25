@@ -1,3 +1,10 @@
+"""Reproduce the manuscript statistics from minimized derived data.
+
+The input files contain de-identified derivatives of archived experimental
+observations. This script does not simulate participant observations, generate
+replacement data, or modify the released input files.
+"""
+
 from __future__ import annotations
 
 import argparse

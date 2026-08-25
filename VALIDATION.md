@@ -1,6 +1,8 @@
 # Validation Record
 
-The minimized package was tested independently of the raw-data and Tobii-processing directories on 20 August 2026.
+The minimized package was originally tested on 20 August 2026 and re-tested on 25 August 2026 in an isolated working directory without reading from or referencing the raw-data or Tobii-processing directories. The re-test used only the packaged data and code together with the listed software dependencies. This is a released-files reproducibility check, not an external independent validation of the study, its data collection, or its ecological validity.
+
+The five released data files are byte-for-byte unchanged from the package assembled on 20 August 2026. The 25 August update clarifies documentation and adds a provenance record and data checksums; it does not alter the statistical inputs or analytical calculations.
 
 ## Headline checks
 

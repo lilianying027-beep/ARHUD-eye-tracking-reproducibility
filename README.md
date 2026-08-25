@@ -1,6 +1,13 @@
-# Minimal Statistical Reproducibility Package
+# AR-HUD Minimal Statistical Reproducibility Package
 
 This package contains the minimum de-identified, derived data needed to reproduce the statistical analyses reported in the AR-HUD eye-tracking manuscript. It is not a release of the original eye-tracking recordings.
+
+**Package version:** 25 August 2026  
+**Manuscript ID:** sustainability-4419983
+
+All released numerical values are de-identified derivatives of the archived experimental data analyzed in the manuscript. No simulated or synthetic participant observations are included.
+
+See `PROVENANCE.md` for the origin, minimization steps, identifier treatment, and validation scope of the released files. SHA-256 hashes for the five data files are provided in `DATA_CHECKSUMS.sha256`.
 
 ## Disclosure scope
 
@@ -33,6 +40,8 @@ Minimum input for the maneuver-level AUC comparison, participant-mean AUC sensit
 ### `data/transition_maneuver_anonymized.csv`
 
 Minimum input for the 81 exploratory maneuver-level Mann-Whitney comparisons. Participant, clip, trial, coordinate, and timing identifiers are deliberately omitted.
+
+Each maneuver contributes nine transition-probability rows, including zero-probability transitions. Because the participant, clip, and maneuver identifiers were removed during data minimization, identical rows may occur even though they originated from distinct maneuver observations. These rows must not be deduplicated.
 
 ### `data/transition_participant_aggregate.csv`
 
@@ -89,4 +98,4 @@ The original 120-Hz eye-tracking streams, timestamped recording metadata, Tobii 
 
 ## Software environment used for validation
 
-The package was independently validated with Python, pandas, NumPy, SciPy, statsmodels, and patsy. Small last-digit differences may occur across library versions, particularly during mixed-model optimization.
+The package was validated in an isolated working directory using only the packaged data and code together with the listed software dependencies. This was a released-files reproducibility check, not an external independent validation of the study. Validation used Python, pandas, NumPy, SciPy, statsmodels, and patsy. Small last-digit differences may occur across library versions, particularly during mixed-model optimization.
