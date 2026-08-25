@@ -1,0 +1,6 @@
+file,rows,disclosure_scope
+auc_trial_anonymized.csv,2953,Trial-level derived AUC; pseudonymous participant and clip IDs
+transition_maneuver_anonymized.csv,26577,Maneuver-level derived transition probabilities; no participant/clip/trial IDs
+transition_participant_aggregate.csv,3240,Participant-mean transition probabilities for paired sensitivity analysis
+distance_clip_summary.csv,180,Clip-level mean distances; no frame coordinates or timestamps
+distance_frame_summary.csv,18,"Only n, mean, SD, and variance assumption for Table 4"
